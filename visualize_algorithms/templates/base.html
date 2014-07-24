@@ -1,0 +1,15 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+  <title>{% block title %}algo{% endblock %}</title>
+  <script type="text/javascript" src="{% static "js/d3.min.js" %}"></script>
+  <body>
+    {% block body %}
+    {% endblock %}
+    <script type="text/javascript" charset="utf-8">
+      var API_BASE = '/api/v1/'
+    </script>
+    {% block body_script %}
+    {% endblock %}
+  </body>
+</html>
