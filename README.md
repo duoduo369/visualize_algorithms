@@ -13,7 +13,7 @@ to yield vitual, so we can check very step.
 Api
 ---
 
-POST /api/v1/:algorithms_name
+GET /api/v1/:algorithms_name
 
 DATA
     type: json
@@ -28,3 +28,5 @@ RETURN
             [],
             ...
         ]
+
+### GET /api/v1/bubble_sort
